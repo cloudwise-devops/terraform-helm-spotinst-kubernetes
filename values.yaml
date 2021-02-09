@@ -1,0 +1,10 @@
+spotinst:
+  token: <spotinst-token>
+  account: <spotinst-account>
+  clusterIdentifier: <spotinst-cluster-id>
+  disableAutoUpdate: false
+  enableCsrApproval: true
+image:
+  repository: spotinst/kubernetes-cluster-controller
+  pullPolicy: Always
+  pullSecrets: []
