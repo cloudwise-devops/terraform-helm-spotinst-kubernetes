@@ -8,9 +8,9 @@ resource "helm_release" "spotinst-controller" {
   values = [
     <<EOT
     spotinst:
-      token: ${var.spotinst_token}
-      account: ${var.spotinst_account}
-      clusterIdentifier: ${var.spotinst_clusterId}
+      token: ${var.spotinst-token}
+      account: ${var.spotinst-account}
+      clusterIdentifier: ${var.spotinst-clusterId}
       disableAutoUpdate: false
       enableCsrApproval: true
     image:

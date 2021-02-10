@@ -23,19 +23,19 @@ variable "namespace" {
   type        = "string"
 }
 
-variable "spotinst_account" {
+variable "spotinst-account" {
   default     = ""
   description = "spotinst account to use"
   type        = "string"
 }
 
-variable "spotinst_token" {
+variable "spotinst-token" {
   default     = ""
   description = "spotinst token to use"
   type        = "string"
 }
 
-variable "spotinst_clusterId" {
+variable "spotinst-clusterId" {
   default     = ""
   description = "spotinst cluster ID to use"
   type        = "string"
