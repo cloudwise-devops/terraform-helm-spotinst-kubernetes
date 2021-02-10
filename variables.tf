@@ -1,32 +1,42 @@
 variable "gce-region" {
-  default = "insert region"
+  default     = ""
+  description = "gce region for cluster"
+  type        = "string"
 }
 
 variable "gce-project" {
-  default = "insert project"
+  default     = ""
+  description = "gce project to be used"
+  type        = "string"
 }
 
 
 variable "k8s-context" {
-}
-
-variable "helm_cluster_admin_tls_client_key" {
-}
-
-variable "helm_cluster_admin_tls_client_cert" {
-}
-
-variable "helm_cluster_admin_tls_ca_path" {
+  default     = ""
+  description = "k8s context to use"
+  type        = "string"
 }
 
 variable "namespace" {
-  default = "kube-system"
+  default     = "kube-system"
+  description = "namespace to use"
+  type        = "string"
 }
 
 variable "spotinst_account" {
-    default = ""
+  default     = ""
+  description = "spotinst account to use"
+  type        = "string"
 }
 
 variable "spotinst_token" {
-    default = ""
+  default     = ""
+  description = "spotinst token to use"
+  type        = "string"
+}
+
+variable "spotinst_clusterId" {
+  default     = ""
+  description = "spotinst cluster ID to use"
+  type        = "string"
 }
