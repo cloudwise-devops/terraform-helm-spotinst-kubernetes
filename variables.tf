@@ -27,6 +27,6 @@ variable "spotinst-clusterId" {
 
 variable "spotist-helm-chart-version" {
   description = "spoinst helm image version"
-  type = string
-  default = "1.0.84"
+  type        = string
+  default     = "1.0.84"
 }
