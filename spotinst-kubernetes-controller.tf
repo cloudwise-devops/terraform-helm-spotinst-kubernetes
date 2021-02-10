@@ -2,7 +2,7 @@ resource "helm_release" "spotinst-controller" {
   name       = "spotinst-kubernetes-cluster-controller"
   repository = "https://spotinst.github.io/spotinst-kubernetes-helm-charts"
   chart      = "spotinst-kubernetes-cluster-controller"
-  version    = "1.0.84"
+  version    = var.spotist-helm-chart-version
   namespace  = var.namespace
 
   values = [

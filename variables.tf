@@ -1,18 +1,4 @@
-variable "gce-region" {
-  default     = ""
-  description = "gce region for cluster"
-  type        = "string"
-}
-
-variable "gce-project" {
-  default     = ""
-  description = "gce project to be used"
-  type        = "string"
-}
-
-
 variable "k8s-context" {
-  default     = ""
   description = "k8s context to use"
   type        = "string"
 }
@@ -24,19 +10,23 @@ variable "namespace" {
 }
 
 variable "spotinst-account" {
-  default     = ""
   description = "spotinst account to use"
   type        = "string"
 }
 
 variable "spotinst-token" {
-  default     = ""
   description = "spotinst token to use"
   type        = "string"
 }
 
 variable "spotinst-clusterId" {
-  default     = ""
   description = "spotinst cluster ID to use"
   type        = "string"
+}
+
+
+variable "spotist-helm-chart-version" {
+  description = "spoinst helm image version"
+  type = string
+  default = "1.0.84"
 }

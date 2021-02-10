@@ -1,9 +1,3 @@
-provider "google" {
-  project = var.gce-project
-  region  = var.gce-region
-  version = "~> 2.9.1"
-}
-
 provider "helm" {
   version = "~> 1.0"
   kubernetes {
@@ -15,4 +9,3 @@ provider "helm" {
 provider "kubernetes" {
   config_context = var.k8s-context
 }
-
