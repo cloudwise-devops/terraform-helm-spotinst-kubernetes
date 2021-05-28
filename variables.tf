@@ -1,8 +1,3 @@
-variable "k8s-context" {
-  description = "k8s context to use"
-  type        = "string"
-}
-
 variable "namespace" {
   default     = "kube-system"
   description = "namespace to use"
