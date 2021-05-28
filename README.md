@@ -18,7 +18,6 @@ Terraform module to install helm chart wrapped in terraform
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| k8s-context | k8s context to use | `string` | n/a | yes |
 | namespace | namespace to use | `string` | `"kube-system"` | no |
 | spotinst-account | spotinst account to use | `string` | n/a | yes |
 | spotinst-clusterId | spotinst cluster ID to use | `string` | n/a | yes |
