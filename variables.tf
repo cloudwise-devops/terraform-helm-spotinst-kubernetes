@@ -23,5 +23,14 @@ variable "spotinst-clusterId" {
 variable "spotist-helm-chart-version" {
   description = "spoinst helm image version"
   type        = string
-  default     = "1.0.84"
+  default     = "1.0.90"
+}
+
+
+variable "helm_repos" {
+  type        = map(string)
+  description = "Helm repo"
+  default = {
+    spotinst-repo = "https://spotinst.github.io/spotinst-kubernetes-helm-charts"
+  }
 }
